@@ -1,0 +1,104 @@
+input{
+    display: none;
+}
+body{
+    background-image: url(photography.jpg);
+    background-size:100%;
+}
+div div{
+    height:50px;
+    width: 150px;
+    font-size:x-large;
+    padding: 20px;
+    font-family: 'Cormorant Infant', serif;
+}
+
+div div:hover{
+    transform: skew(5deg);
+    box-shadow: 2px 2px 10px black;
+    background-color: #FBE7C6;
+    text-decoration:overline;
+
+
+}
+#bbn{
+    height: 50px;
+    width: 150px;
+    display: inline-block;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+    box-shadow: 1px 1px 10px black;
+    position: relative;
+    left: 10px;
+    top: 10px;
+    transition: all 0.8s 0.2s;
+}
+.one{
+    height: 50px;
+    width: 50px;
+    display: inline-block;
+    padding: 20px 0px 0px 0px;
+    text-align: center;
+}
+.me{
+    height: 50px;
+    width: 150px;
+    background-color: yellowgreen;
+    border: 2px solid yellow;
+    text-decoration:underline;
+}
+.meh{
+    height:30px;
+    width: 150px; 
+    background-color: yellowgreen;
+    border: 2px solid yellow;
+
+}
+.meh:hover{
+    transform: none;
+    text-decoration: none;
+}
+.meh span{
+    text-decoration: underline;  
+    opacity: 0.5;  
+    transition: all 0.8s 0.2s;
+}
+.meh span:hover{
+    transform:scale(1.1,1.1);
+    opacity: 1;
+    transition: all 0.8s 0.2s;
+
+}
+.meh,.me,.one{
+    position: relative;
+    left: -300px;
+    transition: all 0.8s 0.2s;
+}
+
+#bbn:hover{
+
+    transform: scale(1.1,1.1);
+    background-color: gold;
+    transition: all 0.8s 0.2s;
+
+}
+
+.one:hover{
+    box-shadow: none;
+    transform: scale(1.8,1.8);
+    background-color: gold;
+    transition: all 0.8s 0.2s;
+
+}
+
+#check:checked~div{
+    position: relative;
+    left:0px;
+    transition: all 0.8s 0.2s;
+  
+}
+#check:checked~#bbn{
+    position: relative;
+    left: -300px;
+    transition: all 0.8s 0.2s;
+}
